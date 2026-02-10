@@ -28,8 +28,8 @@ nav:
     url: "/calendar/"
  # - label: "Contact"
  #   url: "/contact/"
-  - label: "CV"
-    url: "/assets/cv.pdf"
+  - label: "Resume"
+    url: "/assets/resume.pdf"
 
 # Make clean URLs like /publications/ instead of /publications.html
 permalink: pretty
