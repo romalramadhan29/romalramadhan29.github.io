@@ -26,8 +26,8 @@ nav:
  #   url: "/courses/"
   - label: "Calendar"
     url: "/calendar/"
- # - label: "Contact"
- #   url: "/contact/"
+  - label: "Contact"
+    url: "/contact/"
   - label: "Resume"
     url: "/assets/resume.pdf"
 
