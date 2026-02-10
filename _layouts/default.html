@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    {% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}
+  </title>
+
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="container">
+      <h1>{{ site.title }}</h1>
+      <ul>
+        {% for item in site.nav %}
+          <li><a href="{{ item.url | relative_url }}">{{ item.label }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main -->
+  <div class="container">
+    {{ content }}
+  </div>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="mailto:{{ site.email }}">Email me</a></li>
+          <li><a href="https://github.com/{{ site.social.github }}">GitHub</a></li>
+          <li><a href="https://linkedin.com/in/{{ site.social.linkedin }}">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user={{ site.social.scholar }}">Google Scholar</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Research Centers</h3>
+        <ul>
+          <li><a href="#">Research Center 1</a></li>
+          <li><a href="#">Research Center 2</a></li>
+          <li><a href="#">Lab Name</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Upcoming Events</h3>
+        <ul>
+          <li><a href="#">Conference Name (Date)</a></li>
+          <li><a href="#">Workshop Title (Date)</a></li>
+          <li><a href="#">Seminar Series (Date)</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="copyright">
+      {{ site.title }} • {{ "now" | date: "%Y" }}
+    </div>
+  </footer>
+</body>
+</html>
