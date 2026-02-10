@@ -1,0 +1,34 @@
+title: "Romal Ramadhan"
+email: "romalramadhan@utexas.edu"
+
+# Used in the header + home section
+name: "Romal Ramadhan"
+position: "PhD Student, Geoenergy and Geoenvironmental Engineering, The University of Texas at Austin"
+
+# Social links (footer)
+social:
+  github: "romalramadhan29"
+  linkedin: "romalramadhan"
+  scholar: "citations?user=YegjddoAAAAJ&hl=en"
+
+# Nav items (top menu)
+nav:
+  - label: "Home"
+    url: "/"
+  - label: "Research"
+    url: "/#research"
+  - label: "Publications"
+    url: "/publications/"
+  - label: "Teaching"
+    url: "/teaching/"
+  - label: "Courses"
+    url: "/courses/"
+  - label: "Calendar"
+    url: "/calendar/"
+  - label: "Contact"
+    url: "/contact/"
+  - label: "CV"
+    url: "/assets/cv.pdf"
+
+# Make clean URLs like /publications/ instead of /publications.html
+permalink: pretty
